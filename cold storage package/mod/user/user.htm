@@ -1,0 +1,310 @@
+<!--
+ * @version 0.7.0
+ * @license MIT license
+ * @link    https://chagry.com
+ * @author  Grigori <git@chagry.com>
+ * @package	user.user.htm
+-->
+
+<!-- Page userHomePage form login -->
+<script id="userHomePage" type="text/html">
+	<section id="userHomePage" class="wrapper">	
+		<div class="row mt">
+			<div class="col-sm-7 col-md-5 col-lg-4 col-md-offset-1 col-lg-offset-2">
+				<h2 class="text-uppercase"><i class="fa fa-power-off"></i> {{#T}}LOGIN{{/T}}</h2>
+				<form id="formLogin" role="form">
+					<div class="panel green-panel">
+						<div class="panel-body">
+							<p class="text-uppercase text-left">
+								{{#T}}PASS_PHRASE{{/T}}
+							</p>
+							<div class="form-group">
+								<textarea class="form-control text-left" name="passPhrase" id="passPhrase" placeholder="{{#TX}}USER_PASS_PHRASE_EX{{/TX}}" rows="4"></textarea>
+							</div>
+							<div id="messDangerPhrase"></div>
+							<div class="panel darkblue-panel no-margin text-center">
+								<div class="panel-body">
+									<p class="text-uppercase text-left">
+										{{#T}}NEW_CODE_PIN{{/T}}
+									</p>
+									{{>pinPartials}}
+								</div>
+							</div>
+						</div>
+						<div class="panel-footer panel-footer-green">
+							<button type="submit" class="btn btn-info btn-lg btn-block"><span class="text-uppercase"><i class="fa fa-power-off"></i> {{#T}}LOGIN{{/T}}</span></button>
+						</div>
+					</div>
+				</form>
+			</div>
+			<!-- menu droit -->
+			<div class="col-sm-5 col-md-5 col-lg-4 pull-right ds">
+				<h3 class="text-uppercase">{{#T}}LOGIN{{/T}}</h3>
+				<div class="text-center">
+					<h1><i class="fa fa-users fa-3x"></i></h1>
+					<p class="text-center lead mt mb">{{#T}}YOU_SOLE_OWNER_SECRET_SENTENCE{{/T}}</p>
+					
+					<div class="panel green-panel">
+						<div class="panel-body">
+							<p class="text-left lead">{{#T}}PASS_PHRASE{{/T}} <i class="fa fa-question-circle"></i></p>
+							<p class="text-justify">{{#T}}PASS_PHRASE_COMPLEXE_LABEL{{/T}}</p>
+						</div>
+					</div>
+					
+					<div class="panel darkblue-panel">
+						<div class="panel-body">
+							<p class="text-left lead">{{#T}}NEW_CODE_PIN{{/T}} <i class="fa fa-question-circle"></i></p>
+							<p class="text-justify"><i class="fa fa-lock fa-4x pull-left"></i> {{#T}}CREAT_NEW_CODE_PIN_LABEL{{/T}}</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+</script>
+
+<!-- Page verifHTML -->
+<script id="verifHTML" type="text/html">
+	<section id="verifHTML" class="wrapper">
+		<div class="row mt">
+			<div class="col-sm-7 col-md-5 col-lg-4 col-md-offset-1 col-lg-offset-2">
+				<h2 class="text-uppercase"><i class="fa fa-shield"></i> {{#T}}CONTROL_SIGN{{/T}}</h2>
+				<form id="formVerif" role="form">
+					<div class="panel green-panel">
+						<div class="panel-body">
+							<p class="text-uppercase text-left">
+								<i class="fa fa-file-text"></i> {{#T}}SIGNED_MESS_INPUT{{/T}}
+							</p>
+							<div class="form-group">
+								<textarea class="form-control" name="mess" id="mess" placeholder="{{#TX}}MESSAGE{{/TX}}" rows="2"></textarea>
+							</div>
+							<p class="text-left text-uppercase">
+								<i class="fa fa-pencil"></i> {{#T}}SIGN_OF_MESS_INPUT{{/T}}
+							</p>
+							<div class="form-group">
+								<textarea class="form-control" name="sign" id="sign" placeholder="{{#TX}}SIGNATURE{{/TX}}" rows="3"></textarea>
+							</div>
+							<div class="panel darkblue-panel no-margin text-center">
+								<div class="panel-body">
+									<p class="text-left text-uppercase">{{#T}}BTC_ADDR_OF_SIGN{{/T}}</p>
+									<div class="form-group">
+										<div class="input-group">
+											<span class="input-group-addon"><i class="fa fa-btc"></i></span>
+											<input class="form-control" placeholder="{{#TX}}BITCOIN_ADDR{{/TX}}" id="btcadr" type="text" name="btcadr" required>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="panel-footer panel-footer-green">
+							<button type="submit" class="btn btn-info btn-lg btn-block"><span class="text-uppercase"><i class="fa fa-shield"></i> {{#T}}VERIFICATION{{/T}}</span></button>
+						</div>
+					</div>
+				</form>
+			</div>
+			<!-- menu droit -->
+			<div class="col-sm-5 col-md-5 col-lg-4 pull-right ds">
+				<h3 class="text-uppercase">{{#T}}VERIFICATION{{/T}}</h3>
+				<div id="verifMess" class="text-center">
+					{{>verifDefautPart}}
+				</div>
+				<hr>
+				<div class="panel green-panel">
+					<div class="panel-body">
+						<p class="text-justify"><i class="fa fa-question-circle fa-5x pull-left"></i> {{#T}}SIGN_MESS_AND_VALIDE_ADDR{{/T}}</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+</script>
+
+<!-- Partials valide Signature -->
+<script id="valideSignPart" type="text/html">
+	<h4 class="text-uppercase">{{#T}}CONTROL_SIGN{{/T}}</h4>
+	<h1><i class="fa fa-check-circle fa-5x"></i></h1>
+	<p class="text-center lead">{{#T}}VALIDE_SIGN{{/T}}</p>
+</script>
+
+<!-- Partials verif defaut -->
+<script id="verifDefautPart" type="text/html">
+	<h1><i class="fa fa-shield fa-5x"></i></h1>
+	<p class="text-center lead">{{#T}}SECTION_VERIF_MESS_AND_SIGN{{/T}}</p>
+</script>
+
+<!-- Page signHTML -->
+<script id="signHTML" type="text/html">
+	<section id="signHTML" class="wrapper">
+		<div class="row mt">
+			<div class="col-sm-7 col-md-5 col-lg-4 col-md-offset-1 col-lg-offset-2">
+				<h2 class="text-uppercase"><i class="fa fa-pencil"></i> {{#T}}SIGNATURE{{/T}}</h2>
+				<form id="formSignMess" role="form">
+					<div class="panel green-panel">
+						<div class="panel-body">
+							<p class="text-uppercase text-left">
+								<i class="fa fa-file-text"></i> {{#T}}SIGN_MESS_LABEL{{/T}}
+							</p>
+							<div class="form-group">
+								<textarea class="form-control" name="mess" id="mess" placeholder="{{#TX}}MESSAGE{{/TX}}" rows="2"></textarea>
+							</div>
+							<div class="panel darkblue-panel no-margin text-center">
+								<div class="panel-body">
+									<p class="text-uppercase text-left fontH1wt">
+									{{#T}}YOUR_CODE_PIN{{/T}}
+									</p>
+									{{>pinPartials}}
+								</div>
+							</div>
+						</div>
+						<div class="panel-footer panel-footer-green">
+							<button type="submit" class="btn btn-info btn-lg btn-block"><span class="text-uppercase"><i class="fa fa-pencil"></i> {{#T}}SIGNATURE{{/T}}</span></button>
+						</div>
+					</div>
+				</form>
+			</div>
+			<!-- Notification -->
+			<div class="col-sm-5 col-md-5 col-lg-4 pull-right ds">
+				<h3 class="text-uppercase">{{#T}}SIGNATURE{{/T}}</h3>
+				<div id="signMess" class="text-center">
+					<h1><i class="fa fa-pencil-square fa-5x"></i></h1>
+					<p class="text-center lead">{{#T}}SECTION_SIGN_MESS{{/T}}</p>
+				</div>
+				<hr>
+				<div class="panel green-panel">
+					<div class="panel-body">
+						<p class="text-justify"><i class="fa fa-question-circle fa-5x pull-left"></i> {{#T}}SIGN_MESS_AND_VALIDE_ADDR{{/T}}</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+</script>
+
+<!-- Partials good Sign -->
+<script id="goodSignPart" type="text/html">
+	<p class="text-center lead mt">{{#T}}SIGN_RESULT_GOOD{{/T}}</p>
+	<pre>{{user.wallet.sign}}</pre>
+	<h4 class="text-uppercase">{{#T}}MESSAGE{{/T}}</h4>
+	<p class="text-center">{{user.wallet.mess}}</p>
+</script>
+
+<!-- Page keyHTML -->
+<script id="keyHTML" type="text/html">
+	<section id="keyHTML" class="wrapper">
+		<div class="row mt">
+			<div id="keyQrCode" class="col-sm-7 col-md-5 col-md-offset-1 col-lg-4 col-lg-offset-2">
+				<h2 class="text-uppercase"><i class="fa fa-key"></i> {{#T}}PRIVAT_KEY{{/T}}</h2>
+				<form id="formKey" role="form">
+					<div class="panel green-panel">
+						<div class="panel-body">
+							<p class="text-uppercase text-left">
+								{{#T}}YOUR_CODE_PIN{{/T}}
+							</p>
+							{{>pinPartials}}
+						</div>
+						<div class="panel-footer panel-footer-green">
+							<button type="submit" class="btn btn-info btn-lg btn-block"><span class="text-uppercase"><i class="fa fa-key"></i> {{#T}}PRIVAT_KEY{{/T}}</span></button>
+						</div>
+					</div>
+				</form>
+			</div>
+			<!-- Notification -->
+			<div class="col-sm-5 col-md-5 col-lg-4 pull-right ds">
+				<h3 class="text-uppercase">{{#T}}PRIVAT_KEY{{/T}}</h3>
+				<div id="signMess" class="text-center">
+					<h1><i class="fa fa-key fa-5x"></i></h1>
+				</div>
+				<hr>
+				<div class="panel green-panel">
+					<div class="panel-body">
+						<p class="text-justify"><i class="fa fa-exclamation-triangle fa-5x pull-left"></i> {{#T}}PRIVAT_KEY_WARNING_LABEL{{/T}}</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+</script>
+
+<!-- Partials Qr Code Privat key -->
+<script id="QrPrivatKeyPart" type="text/html">
+	<h2 class="text-uppercase"><i class="fa fa-key"></i> {{#T}}PRIVAT_KEY{{/T}}</h2>
+	<div class="panel grey-panel">
+		<div class="panel-body">
+			<div id="qrDiv" class="center-block">
+				<canvas id="qrKeyCodeAdr" width="250" height="250"></canvas>
+			</div>
+			<p><pre id="keyText"></pre></p>
+		</div>
+	</div>
+</script>
+
+<!-- Page wallet -->
+<script id="wallet" type="text/html">
+	<section id="wallet" class="wrapper">
+		<div class="row mt">
+			<!-- wallet -->
+			<div id="wallet" class="col-sm-6 col-md-7 col-lg-8 text-center">
+				<h1 class="text-uppercase text-left"><i class="fa fa-credit-card"></i> {{#T}}WALLET{{/T}}</h1>
+				<p class="text-left">{{user.wallet.adr}}</p>
+			</div>
+			<!-- Addr btc & qrcode -->
+			<div class="col-sm-8 col-md-6 col-lg-4 col-lg-offset-4 col-md-offset-3 col-sm-offset-2">
+				<h2 class="text-uppercase"><i class="fa fa-btc"></i> {{#T}}BITCOIN{{/T}}</h2>
+				<div class="panel grey-panel">
+					<div class="panel-body">
+						<div id="qrDiv" class="center-block">
+							<canvas id="qrCodeAdr" width="250" height="250"></canvas>
+						</div>
+						<p>
+							<pre>{{user.wallet.adr}}</pre>
+							{{#T}}BITCOIN_ADDR{{/T}}
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+</script>
+
+<!-- Partials pin code form -->
+<script id="pinPartials" type="text/html">
+	<!-- input pin code -->
+	<div id="formPin">
+		<div class="form-group text-center">
+			<div class="input-group">
+				<span class="input-group-addon"><i class="fa fa-th"></i></span>
+				<input class="form-control" placeholder="{{#TX}}CODE_PIN{{/TX}}" id="password" type="password" name="password" readonly="readonly" required>
+			</div>
+		</div>
+		<div class="btn-toolbar text-center" id="btnPin">
+			<div class="btn-group-vertical">
+				<a class="btn btn-info btn-lg" onclick='$("#formPin #password").val($("#formPin #password").val()+"1");'>1</a>
+				<a class="btn btn-info btn-lg" onclick='$("#formPin #password").val($("#formPin #password").val()+"4");'>4</a>
+				<a class="btn btn-info btn-lg" onclick='$("#formPin #password").val($("#formPin #password").val()+"7");'>7</a>
+			</div>
+			<div class="btn-group-vertical">
+				<a class="btn btn-info btn-lg" onclick='$("#formPin #password").val($("#formPin #password").val()+"2");'>2</a>
+				<a class="btn btn-info btn-lg" onclick='$("#formPin #password").val($("#formPin #password").val()+"5");'>5</a>
+				<a class="btn btn-info btn-lg" onclick='$("#formPin #password").val($("#formPin #password").val()+"8");'>8</a>
+			</div>
+			<div class="btn-group-vertical">
+				<a class="btn btn-info btn-lg" onclick='$("#formPin #password").val($("#formPin #password").val()+"3");'>3</a>
+				<a class="btn btn-info btn-lg" onclick='$("#formPin #password").val($("#formPin #password").val()+"6");'>6</a>
+				<a class="btn btn-info btn-lg" onclick='$("#formPin #password").val($("#formPin #password").val()+"9");'>9</a>
+			</div>
+			<div class="btn-group-vertical">
+				<a class="btn btn-info btn-lg" onclick='$("#formPin #password").val($("#formPin #password").val().substr(0, $("#password").val().length-1));'><i class="fa fa-angle-left"></i></a>
+				<a class="btn btn-info btn-lg" onclick='$("#formPin #password").val("");'><i class="fa fa-angle-double-left"></i></a>
+				<a class="btn btn-info btn-lg" onclick='$("#formPin #password").val($("#formPin #password").val()+"0");'>0</a>
+			</div>
+		</div>
+	</div>
+</script>
+
+<!-- Partials message danger phrase bad or good -->
+<script id="messDangerPhraseHTML" type="text/html">
+	<div class="alert alert-{{user.messPass.alert}} text-justify" role="alert">
+		<i class="fa fa-{{user.messPass.icone}} fa-3x pull-left"></i> <small><strong>{{#T}}{{user.messPass.message}}{{/T}}</strong> {{#T}}PHRASE_WARNING_MESS{{/T}}</small>
+	</div>
+</script>
+
