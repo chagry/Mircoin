@@ -1,0 +1,154 @@
+{
+	"api"            : "https://api.api/api/",
+	"protocol"       : "https",
+	"lng" : {
+		"off"        : true,
+		"list"       : ["en","fr"],
+		"url"        : "translate/",
+		"file"       : "defaut",
+		"langue"     : false,
+		"cookie"     : "langueClient",
+		"root"       : "img/flag/",
+		"extension"  : ".gif"
+	},
+	"event" : {
+		"langue"     : "langue",
+		"login"      : "login",
+		"logout"     : "logout"
+	},
+	"div" : {
+		"event"      : "container",
+		"content"    : "content",
+		"page"   	 : "main-content",
+		"mRight"     : "menuRight",
+		"menu"       : "menu"
+	},
+	"plug" : {
+		"url"        : "mod/",
+		"list" : [
+			"btc",
+			"user",
+			"home"
+		]
+	},
+	"tmpl" : {
+		"rules" : {
+			"email" : {
+				"required"  : true,
+				"email"     : true
+			},
+			"password" : {
+				"required"  : true,
+				"minlength" : 4,
+				"number"    : true
+			},
+			"accept" : {
+				"required"  : true
+			},
+			"passPhrase" : {
+				"required"  : true
+			},
+			"mess" : {
+				"required"  : true
+			},
+			"sign" : {
+				"required"  : true
+			},
+			"som" : {
+				"number"    : true
+			},
+			"cles" : {
+				"required"  : true,
+				"minlength" : 32,
+				"maxlength" : 124
+			},
+			"btcadr" : {
+				"required"  : true,
+				"minlength" : 32,
+				"alphanumeric" : true
+			},
+			"ticket" : {
+				"required"  : true,
+				"minlength" : 32,
+				"alphanumeric" : true
+			},
+			"inputSecuCode" : {
+				"required"  : true,
+				"minlength" : 32
+			}
+		},
+		"messages" : {
+			"email" : {
+				"required"  : "FORM_WARNING_EMAIL_REQUIRED",
+				"email"     : "FORM_WARNING_EMAIL_INVALID"
+			},
+			"accept" : {
+				"required"  : "FORM_WARNING_VALIDATION_FORM_FAILED"
+			},
+			"passPhrase" : {
+				"required"  : "FORM_WARNING_PASS_PHRASE_REQUIRED"
+			},
+			"mess" : {
+				"required"  : "FORM_WARNING_MESS_INPUT_REQUIRED"
+			},
+			"sign" : {
+				"required"  : "FORM_WARNING_SIGN_INPUT_REQUIRED"
+			},
+			"som" : {
+				"number"    : "FORM_WARNING_SOM_INVALID"
+			},
+			"cles" : {
+				"required"  : "FORM_WARNING_KEY_REQUIRED",
+				"minlength"  : "FORM_WARNING_KEY_REQUIRED",
+				"maxlength"  : "FORM_WARNING_KEY_REQUIRED"
+			},
+			"btcadr" : {
+				"required"  : "FORM_WARNING_ADDR_BTC_REQUIRED",
+				"minlength" : "FORM_WARNING_ADDR_BTC_INVALID",
+				"alphanumeric" : "FORM_WARNING_ADDR_BTC_INVALID"
+			},
+			"ticket" : {
+				"required"  : "FORM_WARNING_TICKET_CODE_REQUIRED",
+				"minlength" : "FORM_WARNING_TICKET_CODE_INVALID",
+				"alphanumeric" : "FORM_WARNING_TICKET_CODE_INVALID"
+			},
+			"password" : {
+				"required"  : "FORM_WARNING_CODE_PIN_REQUIRED",
+				"minlength" : "FORM_WARNING_CODE_PIN_MIN",
+				"number"    : "FORM_WARNING_CODE_PIN_INVALID"
+			}
+		},
+		"html" : {
+			"spinClass"     : "fa-spinner fa-spin"
+		}
+	},
+	"voix" : {
+		"off" : true,
+		"is"  : false,
+		"load" : {
+			"sound"         : false
+		},
+		"sound" : {
+			"name"          : "sound",
+			"off"           : true,
+			"btnOver"       : "btnOver:0.1",
+			"setup"         : "setup:0.2",
+			"click"         : "top:0.1",
+			"error"         : "error:0.1",
+			"url"           : "sounds/",
+			"list" : [
+				"setup",
+				"openWin",
+				"closeWin",
+				"error",
+				"btnOver",
+				"Shutdown",
+				"top",
+				"newPage",
+				"water_droplet_2",
+				"water_droplet_3",
+				"water_droplet"
+			]
+		}
+	}
+}

@@ -1,0 +1,117 @@
+<!--
+ * @version 0.6.0
+ * @license MIT license
+ * @link    https://chagry.com
+ * @author  Grigori <git@chagry.com>
+ * @package	btc.btc.htm
+-->
+
+<!-- Menu price -->
+<script id="mBtc" type="text/html">
+	{{#btc.off}}
+		<div id="mBtc" class="btn-group navbar-btn">
+			<button type="button" class="btn btn-info" data-toggle="tooltip" data-placement="bottom" data-container="body" title="{{#TX}}BTC{{/TX}} / {{#TX}}{{btc.devise}}{{/TX}}">
+				<span> <i class="fa fa-btc"></i> </span><small> {{#BTCPRX}}1{{/BTCPRX}} {{#CURRENCY}}CODE{{/CURRENCY}}</small>
+			</button>
+			<button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown">
+				{{#CURRENCY}}ICO{{/CURRENCY}}
+			</button>
+			<ul class="dropdown-menu scrollable-menu">
+				{{#btc.menu}}
+					<li><a class="cursor" onclick="$.btc.changePrices('{{.}}');"><img src="img/currency/{{.}}.jpg" height="20" alt="{{.}}"> {{#TX}}{{.}}{{/TX}}</a></li>
+				{{/btc.menu}}
+			</ul>
+		</div>
+	{{/btc.off}}
+</script>
+
+<!-- Panel change -->
+<script id="pChange" type="text/html">
+	{{#btc.xchange}}
+		<!-- CHANGE FORM -->
+		<form id="formXchange" role="form">
+			<div class="row">
+				<div class="col-xs-12 text-center text-uppercase">
+					<h2><i class="fa fa-refresh"></i> {{#T}}CHANGE{{/T}}</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-10 col-xs-offset-1 text-left">
+					<div class="input-group input-group-lg">
+						<div class="input-group-btn">
+							<button id="fromIcon" type="button" class="btn btn-theme03 dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								<img src="img/currency/{{fromCurr}}.jpg" height="25" alt="{{#TX}}{{fromCurr}}{{/TX}}">
+							</button>
+							<ul class="dropdown-menu scrollable-menu">
+								{{#btc.menu}}
+									<li><a class="cursor" onclick="$.btc.xChangeCurrency('{{.}}', 1);"><img src="img/currency/{{.}}.jpg" height="20" alt="{{.}}"> {{#TX}}{{.}}{{/TX}}</a></li>
+								{{/btc.menu}}
+							</ul>
+						</div>
+						<input type="number" class="form-control text-center" id="fromSum" value="{{fromSum}}">
+						<div class="input-group-btn">
+							<button id="fromCode" type="button" class="btn btn-theme03" onclick="$.btc.xChangeFrom()">
+								{{fromCurr}}
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 text-center">
+					<p><span id="fromName">{{#T}}{{fromCurr}}{{/T}}</span> / <span id="toName">{{#T}}{{toCurr}}{{/T}}</span></p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-10 col-xs-offset-1 text-left">
+					<div class="input-group input-group-lg">
+						<div class="input-group-btn">
+							<button id="toIcon" type="button" class="btn btn-theme03 dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								<img src="img/currency/{{toCurr}}.jpg" height="25" alt="{{#TX}}{{toCurr}}{{/TX}}">
+							</button>
+							<ul class="dropdown-menu scrollable-menu">
+								{{#btc.menu}}
+									<li><a class="cursor" onclick="$.btc.xChangeCurrency('{{.}}', 2);"><img src="img/currency/{{.}}.jpg" height="20" alt="{{.}}"> {{#TX}}{{.}}{{/TX}}</a></li>
+								{{/btc.menu}}
+							</ul>
+						</div>
+						<input type="number" class="form-control text-center" id="toSum" value="{{toSum}}">
+						<div class="input-group-btn">
+							<button id="toCode" type="button" class="btn btn-theme03" onclick="$.btc.xChangeTo()">
+								{{toCurr}}
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</form>
+	{{/btc.xchange}}
+	{{^btc.xchange}}
+		<div class="row">
+			<div class="col-xs-12 text-center text-uppercase">
+				<h1><i class="fa fa-spinner fa-spin"></i> {{#T}}LOAD{{/T}}...</h1>
+			</div>
+		</div>
+	{{/btc.xchange}}
+</script>
+
+<!-- Page Scan QR code modal -->
+<script id="qrCodeReadModal" type="text/html">
+	<div id="qrCodeReadModal" class="modal fade" tabindex="-1" data-backdrop="static">
+		<div class="modal-dialog modal-sm">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" onClick="$.btc.closeQrReadModal();" aria-hidden="true">&times;</button>
+					<h4 class="modal-title"><i class="fa fa-qrcode"></i> {{#T}}SCAN_QR_CODE{{/T}}</h4>
+				</div>
+				<div class="modal-body">
+					<div id="reader" class="center-block" style="width:260px;height:250px"></div>
+				</div>
+				<div class="modal-footer">
+					<span class="pull-left"><i class="fa fa-spinner fa-pulse fa-2x"></i> {{#T}}SCAN{{/T}}...</span>
+					<button type="button" class="btn btn-primary" onClick="$.btc.closeQrReadModal();">{{#T}}CLOSE{{/T}}</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</script>
