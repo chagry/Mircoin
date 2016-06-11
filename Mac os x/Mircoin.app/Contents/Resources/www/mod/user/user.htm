@@ -524,25 +524,34 @@
 
 <!-- Partials send valide tx -->
 <script id="sendValidePart" type="text/html">
-	<hr>
-	<div class="progress">
+	<div class="progress mt">
 		<div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;"></div>
 	</div>
 	<h4 class="text-uppercase">{{#T}}CONFIRM_SEND_TX{{/T}}</h4>
-	<p class="text-center">{{user.send.adr}}</p>
-	{{#user.send.btc}}
-		<p class="text-center">
-			{{#NICE_NUMBER}}{{user.send.btc}}{{/NICE_NUMBER}} Satoshi<br>
-			<i class="fa fa-btc"></i> {{#STHBTC}}{{user.send.btc}}{{/STHBTC}}<br>
-			{{#CURRENCY}}ICO{{/CURRENCY}} {{#STHPRX}}{{user.send.btc}}{{/STHPRX}} {{#CURRENCY}}CODE{{/CURRENCY}}
-		</p>
-	{{/user.send.btc}}
-	{{^user.send.btc}}
-		<p class="text-center">
-			{{#T}}SEND_SOLD_INPUT_HOLDER{{/T}}
-		</p>
-	{{/user.send.btc}}
-	<p class="text-center"><i class="fa fa-arrow-circle-o-right"></i> {{user.send.addrSend}}<br>{{#T}}PAY_NOT_BACK{{/T}}</p>
+	<p class="text-center text-danger">{{user.send.addrSend}} <i class="fa fa-arrow-circle-o-right"></i></p>
+	<h4 class="text-uppercase"><i class="fa fa-btc"></i> {{#STHBTC}}{{user.send.sold}}{{/STHBTC}}</h4>
+	<p class="text-center">
+		{{#NICE_NUMBER}}{{user.send.sold}}{{/NICE_NUMBER}} Satoshi<br>
+		{{#CURRENCY}}ICO{{/CURRENCY}} {{#STHPRX}}{{user.send.sold}}{{/STHPRX}} {{#CURRENCY}}CODE{{/CURRENCY}}
+	</p>
+	<div class="panel darkblue-panel">
+		<div class="panel-body">
+			<h5 class="text-uppercase">{{#T}}ADDR_BTC_DEST_INPUT{{/T}}</h5>
+			<p class="text-center text-success"><i class="fa fa-arrow-circle-o-right"></i> {{user.send.adr}}</p>
+			<h4 class="text-uppercase"><i class="fa fa-btc"></i> {{#STHBTC}}{{user.send.btc}}{{/STHBTC}}</h4>
+			<p class="text-center">
+				{{#NICE_NUMBER}}{{user.send.btc}}{{/NICE_NUMBER}} Satoshi<br>
+				{{#STHPRX}}{{user.send.btc}}{{/STHPRX}} {{#CURRENCY}}CODE{{/CURRENCY}}
+			</p>
+		</div>
+	</div>
+	<h4 class="text-uppercase">{{#T}}SOLD{{/T}}</h4>
+	<h4 class="text-uppercase"><i class="fa fa-btc"></i> {{#STHBTC}}{{user.send.soldFin}}{{/STHBTC}}</h4>
+	<p class="text-center">
+		{{#NICE_NUMBER}}{{user.send.soldFin}}{{/NICE_NUMBER}} Satoshi<br>
+		{{#CURRENCY}}ICO{{/CURRENCY}} {{#STHPRX}}{{user.send.soldFin}}{{/STHPRX}} {{#CURRENCY}}CODE{{/CURRENCY}}
+	</p>
+	<p class="text-center">{{#T}}PAY_NOT_BACK{{/T}}</p>
 	<p class="text-center">{{#T}}BTC_FEES{{/T}}</p>
 	<div>
 		<button type="button" onClick="$.user.destructSendTx()" class="btn btn-danger">
@@ -552,7 +561,6 @@
 			<span class="text-uppercase"><i id="btnPayIcon" class="fa fa-arrow-circle-right"></i> {{#T}}SENDING{{/T}}</span>
 		</button>
 	</div>
-	<hr>
 	<p><pre>{{user.send.sign}}</pre></p>
 </script>
 
