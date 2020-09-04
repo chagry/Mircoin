@@ -1,0 +1,242 @@
+<!--
+ * @version 0.8.0
+ * @license MIT license
+ * @link    https://chagry.com
+ * @author  Grigori <git@chagry.com>
+ * @package	user.user.htm
+-->
+
+<!-- Menu logout Off -->
+<script id="mUserOff" type="text/html">
+	{{#user.wallet.addr}}
+		<div class="btn-group navbar-btn mUserOff">
+			<button type="button" class="btn btn-danger" onClick="$.user.sendLogout()" data-toggle="tooltip" data-placement="bottom" data-container="body" title="{{#TX}}LOGOUT{{/TX}}">
+				<i class="fa fa-power-off"></i>
+			</button>
+		</div>
+	{{/user.wallet.addr}}
+</script>
+
+<!-- Page Scan QR code modal -->
+<script id="qrCodeReadModal" type="text/html">
+	<div id="qrCodeReadModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-dialog modal-sm">
+			<div class="modal-content">
+				<div class="color-line"></div>
+				<div class="modal-header">
+					<button type="button" class="close" onClick="$.user.closeQrReadModal();" aria-hidden="true">&times;</button>
+					<h4 class="modal-title"><i class="fa fa-spinner fa-pulse"></i> {{#T}}SCAN{{/T}}...</span></h4>
+					<small class="font-bold"><i class="fa fa-qrcode"></i> {{#T}}SCAN_QR_CODE{{/T}}</small>
+				</div>
+				<div class="modal-body">
+					<div id="reader" class="center-block" style="width:250px;height:250px"></div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-primary" onClick="$.user.closeQrReadModal();">{{#T}}CLOSE{{/T}}</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</script>
+
+<!-- Page sign modal -->
+<script id="signModal" type="text/html">
+	<div id="signModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="color-line"></div>
+				<div class="modal-header text-left">
+					<h4 class="modal-title" id="modalTire"></h4>
+					<small class="font-bold" id="modalLabel"></small>
+				</div>
+				<div class="modal-body">
+					<textarea class="form-control" name="signModalSign" id="signModalSign" rows="8"></textarea>
+					<hr>
+					<small class="font-bold"><span id="messModalSign"></span></small>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-primary" onClick="$('#signModal').modal('hide');">{{#T}}CLOSE{{/T}}</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</script>
+
+<!--  Menu right -->
+<script id="sidebarHome" type="text/html">
+	{{#user.wallet.addr}}
+		<div id="navigation">
+			<a href="https://www.binance.com/fr/register?ref=GDARZ7AU" target="_blank"><img class="m-t-sm m-l-sm" src="img/btc/binance.png" alt="Buy Bitcoin at CEX.IO" width="160" border="0"></a>
+		</div>
+	{{/user.wallet.addr}}
+	{{^user.wallet.addr}}
+		<div id="navigation">
+			<a href="https://www.binance.com/fr/register?ref=GDARZ7AU" target="_blank"><img class="m-t-sm m-l-sm" src="img/btc/binance.png" alt="Buy Bitcoin at CEX.IO" width="160" border="0"></a>
+		</div>
+	{{/user.wallet.addr}}
+</script>
+
+<!-- Page userHomePage form login -->
+<script id="userHomePage" type="text/html">
+	<div class="normalheader transition">
+		<div class="heading">
+			<h1><span class="text-success">{{#T}}BITCOIN{{/T}}</span> {{#T}}PAPER_WALLET{{/T}}</h1>
+			<span>{{#T}}BRAIN_WALLET_LONG_LABEL{{/T}} <br/>{{#T}}ANONYME_WALLET_LONG_LABEL{{/T}}<br/> {{#T}}YOU_SOLE_OWNER_SECRET_SENTENCE{{/T}}</span>
+			<p class="small">{{#T}}PASS_PHRASE_COMPLEXE_LABEL{{/T}}</p>
+			<form id="formLogin" role="form">
+				<div class="hpanel hgreen">
+					<div class="panel-heading">{{#T}}PASS_PHRASE{{/T}}</div>
+					<div class="panel-body">
+						<div class="form-group">
+							<textarea class="form-control text-left" name="passPhrase" id="passPhrase" placeholder="{{#TX}}USER_PASS_PHRASE_EX{{/TX}}" rows="3"></textarea>
+						</div>
+						<div id="messDangerPhrase" class="m-b"></div>
+						<button type="submit" class="btn btn-success"><span class="text-uppercase"><i class="fa fa-power-off"></i> {{#T}}LOGIN{{/T}}</span></button>
+					</div>
+				</div>
+			</form>
+			<div class="row m-t">
+				<div class="col-md-8">
+					<h4 class="m-t-xxxl">{{#T}}WALLET_SIMPLE_USE_AND_SAFE{{/T}}</h4>
+					<p>{{#T}}HYBRID_WALLET_LONG_LABEL{{/T}} {{#T}}SAFE_WALLET_LONG_LABEL{{/T}}</p>
+				</div>
+				<div class="col-md-4">
+					<img src="img/btc/product.png" class="img-responsive">
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="content animate-panel">
+		<div class="well well-sm">
+			{{#T}}CREAT_AND_OPENSOURCE{{/T}} <a href="https://github.com/chagry/Mircoin" target="_blank" type="button" class="btn btn-success"> <i class="fa fa-github"></i> GitHub</a>
+		</div>
+	</div>
+</script>
+
+<!-- Page wallet -->
+<script id="wallet" type="text/html">
+	<div class="small-header transition">
+		<div class="hpanel">
+			<div class="panel-body">
+				<div id="hbreadcrumb" class="pull-right">
+					<ol class="hbreadcrumb breadcrumb">
+						<li><a onClick="$.user.homePage()">OFF LINE</a></li>
+					</ol>
+				</div>
+				<h2 class="font-light m-b-xs curs" onClick="$.user.homePage()">
+					<i class="fa fa-user"></i> {{#T}}MY_ACCOUNT{{/T}}
+				</h2>
+				<small>{{user.wallet.addr}}</small>
+			</div>
+		</div>
+	</div>
+	<div class="content animate-panel">
+		<div class="row">
+			<div id="imgWallet" class="col-lg-7 col-md-6"></div>
+			<div class="col-lg-5 col-md-6">
+				<div class="hpanel">
+					<ul class="nav nav-tabs">
+						<li class="active"><a data-toggle="tab" href="#tab-3"> <i class="fa fa-btc"></i></a></li>
+						<li class=""><a data-toggle="tab" href="#tab-4"><i class="fa fa-key"></i></a></li>
+						<li class=""><a data-toggle="tab" href="#tab-5"><i class="fa fa-pencil"></i></a></li>
+						<li class=""><a data-toggle="tab" href="#tab-6"><i class="fa fa-shield"></i></a></li>
+					</ul>
+					<div class="tab-content">
+						<div id="tab-3" class="tab-pane active">
+							<div class="panel-body">
+								<h3 class="text-center m-b">{{#T}}BITCOIN_ADDR{{/T}}</h3>
+								<div id="qrDiv">
+									<canvas id="qrCodeAdr" width="250" height="250" class="center-block"></canvas>
+								</div>
+								<p class="text-center m-t text-success">
+									<i class="fa fa-btc"></i> {{user.wallet.addr}}
+								</p>
+								<hr>
+								<h3 class="text-center m-b">{{#T}}CHOSE_COLOR{{/T}}</h3>
+								<p class="text-center m-t">
+									<a class="cursor" onClick="$.user.paperWalletFunc('blue')"><img src="img/btc/colorBleu.png" alt="blue" border="0"></a>
+									<a class="cursor" onClick="$.user.paperWalletFunc('orange')"><img src="img/btc/colorOrange.png" alt="orange" border="0"></a>
+									<a class="cursor" onClick="$.user.paperWalletFunc('green')"><img src="img/btc/colorGreen.png" alt="green" border="0"></a>
+									<a class="cursor" onClick="$.user.paperWalletFunc('rose')"><img src="img/btc/colorRose.png" alt="rose" border="0"></a>
+								</p>
+								<hr>
+								<div class="well well-sm">
+									<div id="videoPaperWallet" class="embed-responsive embed-responsive-16by9"></div>
+								</div>
+							</div>
+						</div>
+						<div id="tab-4" class="tab-pane">
+							<div class="panel-body">
+								<h3 class="text-center m-b">{{#T}}PRIVAT_KEY{{/T}}</h3>
+								<div id="qrDiv">
+									<canvas id="qrKeyCodeAdr" width="250" height="250" class="center-block"></canvas>
+								</div>
+								<p class="text-left text-info m-t">
+									<i class="fa fa-key"></i> {{#T}}PRIVAT_KEY{{/T}}
+								</p>
+								<div class="form-group">
+									<textarea class="form-control" name="cle" id="cle" rows="2">{{user.wallet.key}}</textarea>
+								</div>
+								<div class="well well-sm m-t text-success">
+									<small><i class="fa fa-exclamation-triangle"></i> {{#T}}PRIVAT_KEY_WARNING_LABEL{{/T}}</small>
+								</div>
+							</div>
+						</div>
+						<div id="tab-5" class="tab-pane">
+							<div class="panel-body">
+								<h2 class="text-center m-b">{{#T}}SIGNATURE{{/T}}</h2>
+								<p class="text-center lead m-b"><span class="text-success">{{#T}}SECTION_SIGN_MESS{{/T}}</span></p>
+								<p class="text-center m-b">{{#T}}SIGN_MESS_AND_VALIDE_ADDR{{/T}}</p>
+								<hr>
+								<form id="formSignMess" role="form">
+									<p class="text-left text-info">
+										<i class="fa fa-file-text"></i> {{#T}}SIGN_MESS_LABEL{{/T}}
+									</p>
+									<div class="form-group">
+										<textarea class="form-control" name="mess" id="mess" placeholder="{{#TX}}MESSAGE{{/TX}}" rows="4"></textarea>
+									</div>
+									<button type="submit" class="btn btn-success text-uppercase"><i class="fa fa-pencil"></i> {{#T}}SIGNATURE{{/T}}</button>
+								</form>
+							</div>
+						</div>
+						<div id="tab-6" class="tab-pane">
+							<div class="panel-body">
+								<h2 class="text-center text-success m-b">{{#T}}CONTROL_SIGN{{/T}}</h2>
+								<p class="text-center text-muted m-b">{{#T}}SECTION_VERIF_MESS_AND_SIGN{{/T}}</p>
+								<form id="formVerif" role="form">
+									<p class="text-left text-info">
+										<i class="fa fa-file-text"></i> {{#T}}SIGNED_MESS_INPUT{{/T}}
+									</p>
+									<div class="form-group">
+										<textarea class="form-control" name="mess" id="mess" placeholder="{{#TX}}MESSAGE{{/TX}}" rows="3"></textarea>
+									</div>
+									<p class="text-left text-info">
+										<i class="fa fa-pencil"></i> {{#T}}SIGN_OF_MESS_INPUT{{/T}}
+									</p>
+									<div class="form-group">
+										<textarea class="form-control" name="sign" id="sign" placeholder="{{#TX}}SIGNATURE{{/TX}}" rows="2"></textarea>
+									</div>
+									<p class="text-left text-info">{{#T}}BTC_ADDR_OF_SIGN{{/T}}</p>
+									<div class="form-group">
+										<div class="input-group">
+											<span class="input-group-addon"><i class="fa fa-btc"></i></span>
+											<input class="form-control" placeholder="{{#TX}}BITCOIN_ADDR{{/TX}}" id="btcadr" type="text" name="btcadr" required>
+										</div>
+									</div>
+									<button type="submit" class="btn btn-success text-uppercase"><i class="fa fa-shield"></i> {{#T}}VERIFICATION{{/T}}</button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</script>
+
+<!-- Partials message danger phrase bad or good -->
+<script id="messDangerPhraseHTML" type="text/html">
+	<div class="alert alert-{{user.messPass.alert}}" role="alert">
+		<small><strong><i class="fa fa-{{user.messPass.icone}}"></i> {{#T}}{{user.messPass.message}}{{/T}}</strong> {{#T}}PHRASE_WARNING_MESS{{/T}}</small>
+	</div>
+</script>

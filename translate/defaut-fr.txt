@@ -1,0 +1,607 @@
+// Langue Not Translate.
+
+fr                                    Français
+en                                    English
+ru                                    Руcский
+de                                    Deutsch
+it                                    Italiano
+sp                                    Español
+pt                                    Português
+tr                                    Türkçe
+el                                    Ελληνικά
+he                                    עברית
+ja                                    日本語
+ar                                    العربية
+zh                                    中文
+
+// Idem Not Translate.
+
+USER_PASS_PHRASE_EX                   Ex : lsdkhf -foxminecho- 110299 :mecodelta: (tr304512) lk ze fzefj lsdzef2FSD 669912 0143785912 decoti ++ZEROMONT++ 45er AZF
+
+// currency.
+
+AED                                   United Arab Emirates Dirham
+AFN                                   Afghan Afghani
+ALL                                   Albanian Lek
+AMD                                   Armenian Dram
+ANG                                   Netherlands Antillean Guilder
+AOA                                   Angolan Kwanza
+ARS                                   Argentine Peso
+AUD                                   Australian Dollar
+AWG                                   Aruban Florin
+AZN                                   Azerbaijani Manat
+BAM                                   Bosnia-Herzegovina Mark
+BBD                                   Barbadian Dollar
+BDT                                   Bangladeshi Taka
+BGN                                   Bulgarian Lev
+BHD                                   Bahraini Dinar
+BIF                                   Burundian Franc
+BMD                                   Bermudan Dollar
+BND                                   Brunei Dollar
+BOB                                   Bolivian Boliviano
+BRL                                   Brazilian Real
+BSD                                   Bahamian Dollar
+BTC                                   Bitcoin
+BTN                                   Bhutanese Ngultrum
+BWP                                   Botswanan Pula
+BYR                                   Belarusian Ruble
+BZD                                   Belize Dollar
+CAD                                   Canadian Dollar
+CDF                                   Congolese Franc
+CHF                                   Swiss Franc
+CLF                                   Chilean Unit of Account (UF)
+CLP                                   Chilean Peso
+CNY                                   Chinese Yuan
+COP                                   Colombian Peso
+CRC                                   Costa Rican Colón
+CUC                                   Cuban Convertible Peso
+CUP                                   Cuban Peso
+CVE                                   Cape Verdean Escudo
+CZK                                   Czech Republic Koruna
+DJF                                   Djiboutian Franc
+DKK                                   Danish Krone
+DOP                                   Dominican Peso
+DZD                                   Algerian Dinar
+EEK                                   Estonian Kroon
+EGP                                   Egyptian Pound
+ERN                                   Eritrean Nakfa
+ETB                                   Ethiopian Birr
+EUR                                   Euro
+FJD                                   Fijian Dollar
+FKP                                   Falkland Islands Pound
+GBP                                   British Pound Sterling
+GEL                                   Georgian Lari
+GGP                                   Guernsey Pound
+GHS                                   Ghanaian Cedi
+GIP                                   Gibraltar Pound
+GMD                                   Gambian Dalasi
+GNF                                   Guinean Franc
+GTQ                                   Guatemalan Quetzal
+GYD                                   Guyanaese Dollar
+HKD                                   Hong Kong Dollar
+HNL                                   Honduran Lempira
+HRK                                   Croatian Kuna
+HTG                                   Haitian Gourde
+HUF                                   Hungarian Forint
+IDR                                   Indonesian Rupiah
+ILS                                   Israeli New Sheqel
+IMP                                   Manx pound
+INR                                   Indian Rupee
+IQD                                   Iraqi Dinar
+IRR                                   Iranian Rial
+ISK                                   Icelandic Króna
+JEP                                   Jersey Pound
+JMD                                   Jamaican Dollar
+JOD                                   Jordanian Dinar
+JPY                                   Japanese Yen
+KES                                   Kenyan Shilling
+KGS                                   Kyrgystani Som
+KHR                                   Cambodian Riel
+KMF                                   Comorian Franc
+KPW                                   North Korean Won
+KRW                                   South Korean Won
+KWD                                   Kuwaiti Dinar
+KYD                                   Cayman Islands Dollar
+KZT                                   Kazakhstani Tenge
+LAK                                   Laotian Kip
+LBP                                   Lebanese Pound
+LKR                                   Sri Lankan Rupee
+LRD                                   Liberian Dollar
+LSL                                   Lesotho Loti
+LTL                                   Lithuanian Litas
+LVL                                   Latvian Lats
+LYD                                   Libyan Dinar
+MAD                                   Moroccan Dirham
+MDL                                   Moldovan Leu
+MGA                                   Malagasy Ariary
+MKD                                   Macedonian Denar
+MMK                                   Myanma Kyat
+MNT                                   Mongolian Tugrik
+MOP                                   Macanese Pataca
+MRO                                   Mauritanian Ouguiya
+MTL                                   Maltese Lira
+MUR                                   Mauritian Rupee
+MVR                                   Maldivian Rufiyaa
+MWK                                   Malawian Kwacha
+MXN                                   Mexican Peso
+MYR                                   Malaysian Ringgit
+MZN                                   Mozambican Metical
+NAD                                   Namibian Dollar
+NGN                                   Nigerian Naira
+NIO                                   Nicaraguan Córdoba
+NOK                                   Norwegian Krone
+NPR                                   Nepalese Rupee
+NZD                                   New Zealand Dollar
+OMR                                   Omani Rial
+PAB                                   Panamanian Balboa
+PEN                                   Peruvian Nuevo Sol
+PGK                                   Papua New Guinean Kina
+PHP                                   Philippine Peso
+PKR                                   Pakistani Rupee
+PLN                                   Polish Zloty
+PYG                                   Paraguayan Guarani
+QAR                                   Qatari Rial
+RON                                   Romanian Leu
+RSD                                   Serbian Dinar
+RUB                                   Russian Ruble
+RWF                                   Rwandan Franc
+SAR                                   Saudi Riyal
+SBD                                   Solomon Islands Dollar
+SCR                                   Seychellois Rupee
+SDG                                   Sudanese Pound
+SEK                                   Swedish Krona
+SGD                                   Singapore Dollar
+SHP                                   Saint Helena Pound
+SLL                                   Sierra Leonean Leone
+SOS                                   Somali Shilling
+SRD                                   Surinamese Dollar
+STD                                   São Tomé and Príncipe Dobra
+SVC                                   Salvadoran Colón
+SYP                                   Syrian Pound
+SZL                                   Swazi Lilangeni
+THB                                   Thai Baht
+TJS                                   Tajikistani Somoni
+TMT                                   Turkmenistani Manat
+TND                                   Tunisian Dinar
+TOP                                   Tongan Paʻanga
+TRY                                   Turkish Lira
+TTD                                   Trinidad and Tobago Dollar
+TWD                                   New Taiwan Dollar
+TZS                                   Tanzanian Shilling
+UAH                                   Ukrainian Hryvnia
+UGX                                   Ugandan Shilling
+USD                                   United States Dollar
+UYU                                   Uruguayan Peso
+UZS                                   Uzbekistan Som
+VEF                                   Venezuelan Bolívar Fuerte
+VND                                   Vietnamese Dong
+VUV                                   Vanuatu Vatu
+WST                                   Samoan Tala
+XAF                                   CFA Franc BEAC
+XAG                                   Silver (troy ounce)
+XAU                                   Gold (troy ounce)
+XCD                                   East Caribbean Dollar
+XDR                                   Special Drawing Rights
+XOF                                   CFA Franc BCEAO
+XPD                                   Palladium Ounce
+XPF                                   CFP Franc
+XPT                                   Platinum Ounce
+YER                                   Yemeni Rial
+ZAR                                   South African Rand
+ZMK                                   Zambian Kwacha (pre-2013)
+ZMW                                   Zambian Kwacha
+ZWL                                   Zimbabwean Dollar
+
+// Country.
+
+AF                                    Afghanistan
+ZA                                    Afrique du sud
+AL                                    Albanie
+DZ                                    Algérie
+DE                                    Allemagne
+AD                                    Andorre
+AO                                    Angola
+AI                                    Anguilla
+AG                                    Antigua et Barbuda
+SA                                    Arabie Saoudite
+AR                                    Argentine
+AW                                    Aruba
+AU                                    Australie
+PS                                    Autorité palestinienne
+AT                                    Autriche
+AZ                                    Azerbaïdjan
+BS                                    Bahamas
+BH                                    Bahreïn
+BD                                    Bangladesh
+BB                                    Barbade
+BE                                    Belgique
+BZ                                    Belize
+BJ                                    Benin
+BM                                    Bermudes
+BT                                    Bhoutan
+BY                                    Biélorussie
+BO                                    Bolivie
+BA                                    Bosnie-Herzégovine
+BW                                    Botswana
+BR                                    Brésil
+BN                                    Brunei Darussalam
+BG                                    Bulgarie
+BF                                    Burkina Faso
+BI                                    Burundi
+KH                                    Cambodge
+CM                                    Cameroun
+CA                                    Canada
+CV                                    Cap Vert
+CL                                    Chili
+CN                                    Chine
+CY                                    Chypre
+C2                                    Chypre du nord
+CO                                    Colombie
+KM                                    Comores
+CG                                    Congo-Brazzaville
+CD                                    Congo RDC
+KR                                    Corée, République de
+CR                                    Costa Rica
+CI                                    Côte d'Ivoire
+HR                                    Croatie
+CU                                    Cuba
+AN                                    Curacao
+DK                                    Danemark
+DJ                                    Djibouti
+DM                                    Dominique
+EG                                    Egypte
+SV                                    El Salvador
+AE                                    Émirats arabes unis
+EC                                    Équateur
+ER                                    Erythree
+ES                                    Espagne
+EE                                    Estonie
+US                                    États-unis
+ET                                    Ethiopie
+FK                                    Falkland Islands
+FJ                                    Fidji
+FI                                    Finlande
+FR                                    France
+GA                                    Gabon
+GM                                    Gambie
+GE                                    Géorgie
+GH                                    Ghana
+GI                                    Gibraltar
+GR                                    Grèce
+GD                                    Grenade
+GP                                    Guadeloupe
+GU                                    Guam
+GT                                    Guatemala
+GN                                    Guinée
+GW                                    Guinée-Bissau
+GQ                                    Guinée équatoriale
+GY                                    Guyana
+GF                                    Guyane française
+HT                                    Haïti
+HN                                    Honduras
+HK                                    Hong Kong
+HU                                    Hongrie
+KY                                    Îles Caïmans
+CK                                    Îles Cook
+MP                                    Îles Mariannes du nord
+MH                                    Îles Marshall
+SB                                    Îles Salomon
+VI                                    Îles Vierges
+VG                                    Îles Vierges (britanniques)
+IN                                    Inde
+ID                                    Indonésie
+IQ                                    Irak
+IE                                    Irlande
+IS                                    Islande
+IL                                    Israël
+IT                                    Italie
+JM                                    Jamaïque
+JP                                    Japon
+JO                                    Jordanie
+KZ                                    Kazakhstan
+KE                                    Kenya
+KI                                    Kiribati
+K1                                    Kosovo
+KW                                    Koweït
+KG                                    Kyrghyzstan
+LA                                    Laos
+LS                                    Lesotho
+LV                                    Lettonie
+LB                                    Liban
+LR                                    Libéria
+LY                                    Libye
+LI                                    Liechtenstein
+LT                                    Lituanie
+LU                                    Luxembourg
+MO                                    Macao
+MK                                    Macedoine
+MG                                    Madagascar
+MY                                    Malaisie
+MW                                    Malawi
+MV                                    Maldives
+ML                                    Mali
+MT                                    Malte
+MA                                    Maroc
+MQ                                    Martinique
+MU                                    Maurice
+MR                                    Mauritanie
+YT                                    Mayotte
+MX                                    Mexique
+FM                                    Micronesie
+MD                                    Moldavie
+MC                                    Monaco
+MN                                    Mongolie
+ME                                    Montenegro
+MS                                    Montserrat
+MZ                                    Mozambique
+MM                                    Myanmar
+NA                                    Namibie
+NR                                    Nauru
+NP                                    Népal
+NI                                    Nicaragua
+NE                                    Niger
+NG                                    Nigéria
+NU                                    Nioué
+NO                                    Norvège
+NC                                    Nouvelle-Calédonie
+NZ                                    Nouvelle-Zélande
+OM                                    Oman
+UG                                    Ouganda
+UZ                                    Ouzbékistan
+PK                                    Pakistan
+PW                                    Palaos
+PA                                    Panama
+PG                                    Papouasie-Nouvelle-Guinée
+PY                                    Paraguay
+NL                                    Pays-Bas
+PE                                    Pérou
+PH                                    Philippines
+PL                                    Pologne
+PF                                    Polynésie française
+PR                                    Porto Rico
+PT                                    Portugal
+QA                                    Qatar
+CF                                    République Centrafricaine
+DO                                    République dominicaine
+CZ                                    République tchèque
+RE                                    Réunion
+RO                                    Roumanie
+GB                                    Royaume-Uni
+RU                                    Russie
+RW                                    Rwanda
+BL                                    Saint-Barthélemy
+AS                                    Samoa américaines
+WS                                    Samoa occidentales
+ST                                    São Tomé and Príncipe
+SN                                    Sénégal
+YU                                    Serbie
+SL                                    Sierra Léone
+SG                                    Singapour
+SK                                    Slovaquie
+SI                                    Slovénie
+SO                                    Somalie (Somaliland)
+SD                                    Soudan
+LK                                    Sri Lanka
+KN                                    St Christ Nevis
+LC                                    St Lucie
+S1                                    St Maarten
+MF                                    St Martin
+VC                                    St Vincent
+SS                                    Sud-Soudan
+SE                                    Suède
+CH                                    Suisse
+SR                                    Suriname
+SZ                                    Swaziland
+SY                                    Syrie
+TJ                                    Tadjikistan
+TW                                    Taïwan
+TZ                                    Tanzanie
+TD                                    Tchad
+TH                                    Thaïlande
+TP                                    Timor Oriental
+TG                                    Togo
+TO                                    Tonga
+TT                                    Trinité-et-Tobago
+TN                                    Tunisie
+TM                                    Turkménistan
+TC                                    Turks et caiques
+TR                                    Turquie
+TV                                    Tuvalu
+UA                                    Ukraine
+UY                                    Uruguay
+VU                                    Vanuatu
+VE                                    Venezuela
+VN                                    Viêtnam
+YE                                    Yémen
+ZM                                    Zambie
+ZW                                    Zimbabwe
+WW                                    Inconnu
+GL                                    Groenland
+AM                                    Arménie
+IR                                    Iran
+SC                                    Seychelles
+
+// Server error default.
+
+SERV_ERROR_NOT_FIND_FILE              Erreur lors du chargement du fichier d'exécution.
+SERV_ERROR_DATABASE                   Impossible de se connecter à la base SQL. Erreur dans les données.
+SERV_ERROR_INVALID_PARAM_OR_METHODE   Méthodes ou paramètres incorrects. Erreur dans les données.
+SERV_ERROR_CONNECT_MYSQL              Connexion au serveur MySQL impossible. Erreur dans les données d'accès.
+SERV_ERROR_OFFLINE_MESSAGE            L'application est actuellement indisponible pour cause de maintenance. Désolé pour le désagrément.
+
+// Form warning
+
+FORM_WARNING_EMAIL_REQUIRED           Saisissez votre adresse e-mail
+FORM_WARNING_EMAIL_INVALID            L'adresse e-mail n'est pas valide
+FORM_WARNING_CODE_PIN_REQUIRED        Veillez entrer votre code Pin
+FORM_WARNING_CODE_PIN_INVALID         Votre code Pin ne doit être composé que de chiffres
+FORM_WARNING_CODE_PIN_MIN             Votre code Pin doit être composé de 4 chiffres au minimum
+FORM_WARNING_VALIDATION_FORM_FAILED   Vous devez valider le formulaire avant de poursuivre
+FORM_WARNING_PASS_PHRASE_REQUIRED     Veuillez saisir votre phrase secrète.
+FORM_WARNING_SIGN_INPUT_REQUIRED      Veuillez entrer la signature.
+FORM_WARNING_MESS_INPUT_REQUIRED      Veuillez entrer le message.
+FORM_WARNING_SOM_INVALID              Le montant ne doit être composé que de chiffres
+FORM_WARNING_ADDR_BTC_INVALID         Adresse bitcoin incorrecte
+FORM_WARNING_ADDR_BTC_REQUIRED        Veuillez entrer l'adresse bitcoin
+FORM_WARNING_KEY_REQUIRED             Veuillez entrer la clé privée contenant les fonds
+FORM_WARNING_TICKET_CODE_REQUIRED     Veuillez entrer le code du ticket récupéré sur ibTc.cash.
+FORM_WARNING_TICKET_CODE_INVALID      Le code du ticket n'est pas valide.
+
+// Warning
+
+WARNING_CONNECTED                     Vous êtes déjà connecté
+WARNING_NOT_CONNECTED                 Vous n'êtes pas connecté
+WARNING_SIGN_MESS_ERR                 La signature du message a échoué, merci de réessayer.
+WARNING_SIGN_INVALID                  La signature du message n'est pas valide et ne correspond pas à l'identifiant de l'utilisateur.
+WARNING_PRIVAT_KEY_INVALID            Clé privée incorrecte
+WARNING_INVALID_DATA                  Les données reçues ne sont pas valides
+WARNING_TICKET_ALREADY_USE            Ce ticket est invalide ou déjà utilisé
+WARNING_TICKET_EXPIRED                Le ticket utilisé a expiré
+WARNING_NOT_BTC_SOLD                  Votre solde actuel ne permet pas de reversement en bitcoin.
+WARNING_BTC_SERVER_UNAVAILABLE        Récupération des données auprès de BlockChain Impossible.
+
+
+// World.
+
+CHOOSE_A_COUNTRY                      Choisir votre pays
+LOAD                                  Chargement
+DOWNLOAD                              Téléchargement
+HOME                                  Accueil
+CANCEL                                Annuler
+NOTIFICATIONS                         Notifications
+YOUR_TEXT_HERE                        Votre texte ici
+MY_ACCOUNT                            Mon adresse bitcoin
+SOUND                                 Audio
+DASHBOARD                             Tableau de bord
+BITCOIN                               Bitcoin
+BITCOIN_ADDR                          Adresse Bitcoin
+WALLET                                Portefeuille
+SOLD                                  Solde
+SYNCHRONISATION                       Synchronisation
+MY_TRANSACTIONS                       Mes transactions
+WAIT_TRANSACTIONS                     Transactions en attente
+SEND_TRANSACTIONS                     Transactions envoyées
+TRANSACTIONS                          Transactions
+WAIT                                  Attente
+RECEIVED                              Reçu
+SENDING                               Envoyer
+BACK                                  Retour
+PRIVAT_KEY                            Clé privée
+CODE_PIN                              Code Pin
+LOGOUT                                Déconnexion
+LOGIN                                 Connexion
+YOUR_CODE_PIN                         Votre code Pin
+NEW_CODE_PIN                          Nouveau code Pin
+MESSAGE                               Message
+SIGNATURE                             Signature
+PRIVAT_KEY                            Clé privée
+PASS_PHRASE                           Phrase secrète
+VERIFICATION                          Vérification
+DEMO                                  Démo
+CLICK_HERE                            cliquez ici
+VIDEO                                 Vidéo
+ADMIN                                 Administrateur
+CHANGE                                Change
+TRANSFERT                             Transfert
+GALLERY                               Galeries
+FREE                                  Gratuit
+USE                                   Utilisation
+EASY                                  Simple
+FAST                                  Rapide
+TICKETS                               Tickets
+TICKET                                Ticket
+SATOSHI                               Satoshi
+PAYMENT                               Paiement
+WEBMASTER                             Webmaster
+OUR_SERVICES                          Nos services
+GENERATED                             Générer
+PRINT                                 Imprimer
+ALREADY_PAY                           Déjà payé.
+OBSERVER                              Observateur
+SCAN_QR_CODE                          QR Code scanner
+CLOSE                                 Fermer
+SCAN                                  Scan
+EMPTY                                 Vide
+YOUR_TEXT                             Votre texte ici
+MY_LEVEL                              Mon niveau
+FREE_BITCOIN                          Bitcoin gratuit
+DOCUMENTATION                         Documentation
+MAKE_A_PAYMENT                        Effectuer un paiement
+FIRST_STEP                            Première étape
+SEC_STEP                              Seconde étape
+THREE_STEP                            Troisième étape
+SEND_SOLD_INPUT_HOLDER                Transférer tout le solde
+ADDR_BTC_DEST_INPUT                   Adresse Bitcoin du destinataire
+PRIVAT_KEY_INPUT                      Clé privée contenant les fonds
+BTC_SUM_INPUT                         Le montant en bitcoin
+PROFESSIONAL                          Professionnel
+REPOSITORY_GITHUB                     Repository Github
+COLD_STORAGE                          Stockage à froid
+MICRO_PAY                             Micropaiement
+PAPER_WALLET                          Portefeuille papier
+CHOSE_COLOR                           Choisissez votre couleur
+WAIT_PAY                              En attente de payement.
+RECEVE_A_PAYMENT                      Recevoir un paiement
+DISPO_IN_GALLERY                      Disponible dans la galerie.
+ADDR_BTC_SIGN_UP                      Adresses bitcoin inscrites.
+VIDEO_DISPO_IN_GALLERY                Vidéos disponible dans la galerie.
+BTC_FEES                              Frais de transaction 0,0001 BTC
+CONFIRM_SEND_TX                       Confirmation de transaction
+SIGNED_MESS_INPUT                     Le message signé
+SIGN_MESS_LABEL                       Le message à signer
+SIGN_OF_MESS_INPUT                    La signature du message
+CONTROL_SIGN                          Vérifier une signature
+BTC_ADDR_OF_SIGN                      L'identifiant du signataire
+PHRASE_DANGER                         Votre phrase secrète est faible!!!
+PHRASE_WARNING                        Votre phrase secrète est moyenne.
+PHRASE_SUCCES                         Votre phrase secrète est complexe.
+PAY_NOT_BACK                          Cette opération est définitive et non réversible
+YOUR_TX_IN_WALLET_5_MN                Votre transaction apparaîtra dans votre portefeuille dans les 3mn.
+VALIDE_SIGN                           Le message est bien signé avec cette adresse bitcoin.
+SEND_SOLD_INPUT_WARNING               Si vous laissez ce champs vide, tout le solde du compte sera transféré sur l'adresse bitcoin destinataire.
+PAY_WITH_KEY_DIRECT                   Payez directement avec la clé privée contenue dans votre portefeuille online ou papier.
+KEY_NOT_SEND_SERVER_LABEL             Pour effectuer le transfert, la transaction est signée en local. Votre clé privée ne quitte jamais cette machine. Seule la transaction signée sera transmise sur le réseau.
+BTC_TRANSAC_NOT_CANCEL_LABEL          Il est important de se rappeler que les transactions en bitcoin sont définitives et ne peuvent pas être annulées.
+PHRASE_WARNING_MESS                   Vous êtes responsable de la complexité de votre phrase. Une phrase trop faible met vos fonds en danger.
+SIGN_RESULT_GOOD                      Voici la signature électronique de votre message authentifié par votre adresse bitcoin.
+SECTION_VERIF_MESS_AND_SIGN           Vous pouvez vérifier une signature et son message avec l'adresse bitcoin du signataire.
+SECTION_SIGN_MESS                     Vous pouvez signer un message avec votre clé privée et vérifiable avec votre adresse bitcoin.
+CREAT_NEW_CODE_PIN_LABEL              Crée un nouveau code pin, destiné à protéger cette session. À chaque nouvelle connexion, vous pouvez choisir un code pin différent.
+PASS_PHRASE_COMPLEXE_LABEL            Plus la phrase secrète est complexe, plus vos fonds seront en sécurité. Mélanger lettre minuscules, majuscules, chiffres et ponctuation. Si vous oubliez votre phrase secrète, vos Bitcoins sont perdus définitivement.
+SIGN_MESS_AND_VALIDE_ADDR             Une signature permet à quelqu'un de prouver sa propriété. Quand votre logiciel signe un message avec la clé privée, le réseau entier peut voir que la signature correspond a l'adresse bitcoin du signataire.
+PRIVAT_KEY_WARNING_LABEL              Les clés privées ne doivent jamais être divulguées, car elles permettent de dépenser les bitcoins de l'adresse.
+PRIVAT_KEY_LINK_WIRHDRAW              Pour utiliser la clé privée simplement
+BRAIN_WALLET_LONG_LABEL               Un portefeuille qui n'existe nulle part sauf dans votre cerveau. Vous pouvez ici, crypter une phrase secrète en adresse bitcoin et sa clé privée.
+HYBRID_WALLET_LONG_LABEL              Vous disposez d'une interface web, mais vos données sont traitées en local avec JavaScript. Votre clé privée ne transite jamais par le réseau.
+SAFE_WALLET_LONG_LABEL                Nous ne gardons aucune trace de vos données privées, tout le portefeuille est régénéré à partir de la phrase secrète à chaque utilisation.
+ANONYME_WALLET_LONG_LABEL             Facile d'utilisation. Sans inscription ni validation du compte, il vous suffit d'entrer votre phrase secrète pour accéder à votre portefeuille.
+SECURITY_WALLET_LONG_LABEL            Votre phrase secrète est cryptée pendant toute la durée de votre session locale avec le code pin. Votre code pin n'est stocké nulle part.
+WALLET_SIMPLE_USE_AND_SAFE            Un portefeuille simple et un vrai coffre fort pour vos bitcoins.
+PAY_WALLET_PAPER_OR_KEY               Payer directement avec un portefeuille papier ou une clé privée.
+LOCAL_SIGN_TRANSACTION                Signature de la transaction en local.
+YOU_SOLE_OWNER_SECRET_SENTENCE        Vous êtes l'unique possesseur et responsable de votre phrase secrète. Elle n'est ni transférée, ni sauvegardée sur le réseau.
+ENTER_PASS_PHRASE_FOR_PAPER_WALLET    Entrer une phrase secrète pour pouvoir générer un portefeuille papier.
+ENTER_BITCOIN_ADDR_FOR_RECEVE         Entrer l'adresse bitcoin sur laquelle vous voulez recevoir vos Satoshi.
+FREE_BITCOIN_SECTION_DESC             Dans cette section vous pouvez effectuer des micropaiements à vous même. Après l'accumulation d'un certain montant, la somme vous sera directement envoyée sur votre adresse bitcoin.
+FREE_BITCOIN_EASY_DESC                Facile d'utilisation, vous n'avez qu'à entrer votre adresse bitcoin et à effectuer les micropaiements.
+FREE_BITCOIN_FREE_DESC                L'offre de base est totalement gratuite. Vous recevrez un ticket, sponsorisé uniquement par la publicité.
+FREE_BITCOIN_FAST_DESC                Les reversements sur votre adresse bitcoin ne se font qu'à partir d'un solde minimum de 5 centimes.
+IBTC_API_PUBLIC_DESC                  Une API qui vous permet d'avoir un système de micropaiements sponsoriser sur votre site ou application en quelques minutes.
+GO_TO_IBTC_FOR_TICKET_CODE            Rendez-vous sur le site ibtc.cash pour récupérer le code d'un ticket. Ce ticket a une valeur en Satoshi que vous pouvez utiliser.
+USE_SERVICE_10_MINUTES                Vous pouvez utiliser ce service toutes les 10 minutes.
+ENTER_TICKET_CODE_FOR_RECEVE          Entrez le code du ticket récupéré sur ibTc.cash. Cette étape va associer le ticket et sa valeur en Satoshi avec votre adresse bitcoin.
+MIN_BEFORT_SEND_SUM                   La somme minimum avant l'envoi est de
+SUM_TOTAL_RECEVE                      La somme totale reçue est de
+NUMBER_TOTAL_TIKET                    Le nombre total de tickets exploités est de
+ENTER_BITCOIN_ADDR_FOR_OBS            Entrez l'adresse bitcoin à observer
+OBS_DIRECT_SOLD_ADDR_BTC              Vous pouvez directement observer votre solde à partir de votre adresse bitcoin. Il n'y a pas besoin de se connecter ou de rentrer des informations personnelles.
+FREE_COIN_DESC_HOME                   Accumulez des centimes de bitcoin et recevez-les dans votre portefeuille.
+HERE_PRINT_PAPER_WALLET               Matérialisez le bitcoin avec des portefeuilles imprimés.
+ACCESS_OBS_SOLD_BTC_ADDR              Accédez à votre solde sans vous connecter. Interrogez n'importe quelle adresse bitcoin.
+FUNC_INFO_ADDR                        Fonction d'information sur l'adresse bitcoin.
+FUNC_RAW_TX                           Fonction de création d'une transaction bitcoin.
+FUNC_SEND_TX                          Fonction d'envois d'une transaction signer.
+NOT_ACCESS_USER_MEDIA                 Vous n'avez pas accès au services medias de votre machine.
+MIRCOIN_COLD_VERSION                  Version allégé pour une utilisation hors ligne.
+
+CREAT_AND_OPENSOURCE                  Crée en 2014, le code de ce portefeuille est disponible en open source sur
